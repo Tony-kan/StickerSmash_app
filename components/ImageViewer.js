@@ -5,7 +5,6 @@ export default ImageViewer = ({ placeholderImageSource, selectedImage }) => {
     ? { uri: selectedImage }
     : placeholderImageSource;
 
-  console.log("New Selected Image ", imageSource);
   return <Image source={imageSource} style={styles.image} />;
 };
 
