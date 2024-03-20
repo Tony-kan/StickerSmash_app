@@ -1,4 +1,5 @@
 import { StatusBar } from "expo-status-bar";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
 import { StyleSheet, Text, View, Image } from "react-native";
 import ImageViewer from "./components/ImageViewer";
 import { Button } from "./components/Button";
@@ -47,7 +48,7 @@ export default function App() {
   const onSaveImageAsync = async () => {};
 
   return (
-    <View style={styles.container}>
+    <GestureHandlerRootView style={styles.container}>
       <View style={styles.imageContainer}>
         <ImageViewer
           placeholderImageSource={PlaceholderImg}
@@ -89,7 +90,7 @@ export default function App() {
       </EmojiPicker>
 
       <StatusBar style="auto" />
-    </View>
+    </GestureHandlerRootView>
   );
 }
 
